@@ -1,7 +1,12 @@
 {
   "name": "pw-player-communicator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tool to achieve the easiest way of communication with the video/chat frames",
+  "homepage": "https://github.com/3Data/pw-player-communicator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3Data/pw-player-communicator.git"
+  },
   "main": "dist/pw-room-handler.js",
   "scripts": {
     "build": "webpack"
