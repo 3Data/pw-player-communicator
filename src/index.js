@@ -61,6 +61,14 @@ class Communicator extends EventEmitter {
     sendMessageToChat({type: "goToPrivate", sessionToken: this.sessionToken});
   }
 
+  sendMessage = message => {
+    sendMessageToChat({
+      type: "externalMessage",
+      value: message,
+      sessionToken: this.sessionToken,
+    });
+  }
+
 }
 
 export {

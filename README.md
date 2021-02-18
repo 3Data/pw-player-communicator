@@ -49,7 +49,13 @@ Or if you're working with NPM / ES6:
 
 ## Methods
 
+### Video
+
   - setVolume(float 0 ... 1)
   - setMuted(boolean)
   - destroyVideo()
+
+### Chat
+
+  - sendMessage(string)
   - goToGroupChat()
