@@ -42,10 +42,16 @@ Or if you're working with NPM / ES6:
 
 ### Available events
 
-  - onVideoPlay
-  - onVideoStop
-  - onVideoOffline
-  - onVideoError
+#### Video events
+
+  - onVideoPlay()
+  - onVideoStop()
+  - onVideoOffline()
+  - onVideoError()
+
+#### Chat events
+
+  - onChatMessage({ nick, message })
 
 ## Methods
 

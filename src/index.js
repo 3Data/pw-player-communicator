@@ -19,10 +19,13 @@ class Communicator extends EventEmitter {
 
   onMessageReceived = e => {
     switch(e.data.type){
+      // Video events:
       case "onVideoPlay": this.emit("videoPlay"); break;
       case "onVideoStop": this.emit("videoStop");  break;
       case "onVideoOffline": this.emit("videoOffline"); break;
       case "onVideoError": this.emit("videoError"); break;
+      // Chat events:
+      case "onChatMessage": this.emit("chatMessage", e.data.data); break;
     }
   }
 
