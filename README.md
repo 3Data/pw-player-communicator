@@ -51,17 +51,17 @@ Or if you're working with NPM / ES6:
 
 #### Chat events
 
-  - onChatMessage({ nick, message })
+  - onChatMessage(object: { nick, message })
 
 ## Methods
 
 ### Video
 
-  - setVolume(float 0 ... 1)
-  - setMuted(boolean)
+  - setVolume(float 0 ... 1: volume)
+  - setMuted(boolean: muted)
   - destroyVideo()
 
 ### Chat
 
-  - sendMessage(string)
+  - sendMessage(string: message)
   - goToGroupChat()
