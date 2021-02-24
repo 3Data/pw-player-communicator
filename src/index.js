@@ -72,6 +72,14 @@ class Communicator extends EventEmitter {
     });
   }
 
+  sendTip = amount => {
+    sendMessageToChat({
+      type: "externalTip",
+      amount: amount,
+      sessionToken: this.sessionToken,
+    });
+  }
+
 }
 
 export {
