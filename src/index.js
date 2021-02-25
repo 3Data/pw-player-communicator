@@ -26,6 +26,7 @@ class Communicator extends EventEmitter {
       case "onVideoError": this.emit("videoError"); break;
       // Chat events:
       case "onChatMessage": this.emit("chatMessage", e.data.data); break;
+      case "onRoomModeUpdate": this.emit("roomModeUpdate", e.data.roomMode); break;
     }
   }
 
