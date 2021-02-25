@@ -65,4 +65,5 @@ Or if you're working with NPM / ES6:
 
   - sendMessage(string: message)
   - sendTip(int: amount)
+  - sendToy(int: amount)
   - goToGroupChat()

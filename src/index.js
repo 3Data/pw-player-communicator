@@ -80,6 +80,14 @@ class Communicator extends EventEmitter {
     });
   }
 
+  sendToy = amount => {
+    sendMessageToChat({
+      type: "externalToy",
+      amount: amount,
+      sessionToken: this.sessionToken,
+    });
+  }
+
 }
 
 export {
