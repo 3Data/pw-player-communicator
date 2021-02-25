@@ -44,14 +44,15 @@ Or if you're working with NPM / ES6:
 
 #### Video events
 
-  - onVideoPlay()
-  - onVideoStop()
-  - onVideoOffline()
-  - onVideoError()
+  - videoPlay()
+  - videoStop()
+  - videoOffline()
+  - videoError()
 
 #### Chat events
 
-  - onChatMessage(object: { nick, message })
+  - chatMessage(object: { nick, message })
+  - roomModeUpdate(string: roomMode)
 
 ## Methods
 
