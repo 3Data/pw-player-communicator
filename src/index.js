@@ -27,6 +27,7 @@ class Communicator extends EventEmitter {
       // Chat events:
       case "onChatMessage": this.emit("chatMessage", e.data.data); break;
       case "onRoomModeUpdate": this.emit("roomModeUpdate", e.data.roomMode); break;
+      case "onVIPRequestStatusUpdate": this.emit("VIPRequestStatusUpdate", e.data.status); break;
     }
   }
 

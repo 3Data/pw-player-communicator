@@ -53,6 +53,7 @@ Or if you're working with NPM / ES6:
 
   - chatMessage(object: { nick, message })
   - roomModeUpdate(string: roomMode)
+  - VIPRequestStatusUpdate(string: status)
 
 ## Methods
 
