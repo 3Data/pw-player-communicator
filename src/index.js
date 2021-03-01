@@ -52,42 +52,30 @@ class Communicator extends EventEmitter {
     }
   }
 
-  destroyVideo = () => {
-    sendMessageToVideo({
-      type: "destroyVideo",
-      sessionToken: this.sessionToken,
-    });
-  }
+  destroyVideo = () => sendMessageToVideo({ type: "destroyVideo", sessionToken: this.sessionToken });
 
   // Chat actions:
 
-  goToGroupChat = () => {
-    sendMessageToChat({type: "goToPrivate", sessionToken: this.sessionToken});
-  }
+  goToGroupChat = () => sendMessageToChat({type: "goToPrivate", sessionToken: this.sessionToken});
 
-  sendMessage = message => {
-    sendMessageToChat({
-      type: "externalMessage",
-      value: message,
-      sessionToken: this.sessionToken,
-    });
-  }
 
-  sendTip = amount => {
-    sendMessageToChat({
-      type: "externalTip",
-      amount: amount,
-      sessionToken: this.sessionToken,
-    });
-  }
+  sendMessage = message => sendMessageToChat({
+    type: "externalMessage",
+    value: message,
+    sessionToken: this.sessionToken,
+  });
 
-  sendToy = amount => {
-    sendMessageToChat({
-      type: "externalToy",
-      amount: amount,
-      sessionToken: this.sessionToken,
-    });
-  }
+  sendTip = amount => sendMessageToChat({
+    type: "externalTip",
+    amount: amount,
+    sessionToken: this.sessionToken,
+  });
+
+  sendToy = amount => sendMessageToChat({
+    type: "externalToy",
+    amount: amount,
+    sessionToken: this.sessionToken,
+  });
 
 }
 
