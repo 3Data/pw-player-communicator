@@ -68,3 +68,4 @@ Or if you're working with NPM / ES6:
   - sendTip(int: amount)
   - sendToy(int: amount)
   - goToGroupChat()
+  - requestVIP()

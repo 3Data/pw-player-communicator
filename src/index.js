@@ -58,6 +58,7 @@ class Communicator extends EventEmitter {
 
   goToGroupChat = () => sendMessageToChat({type: "goToPrivate", sessionToken: this.sessionToken});
 
+  requestVIP = () => sendMessageToChat({type: "requestVIP", sessionToken: this.sessionToken});
 
   sendMessage = message => sendMessageToChat({
     type: "externalMessage",
