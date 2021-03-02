@@ -62,6 +62,8 @@ Or if you're working with NPM / ES6:
   - setVolume(float 0 ... 1: volume)
   - setMuted(boolean: muted)
   - destroyVideo()
+  - activateUserCam()
+  - deactivateUserCam()
 
 ### Chat
 

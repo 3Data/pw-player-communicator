@@ -53,6 +53,16 @@ class Communicator extends EventEmitter {
     }
   }
 
+  activateUserCam = () => sendMessageToVideo({
+    type: "activateUserCam",
+    sessionToken: this.sessionToken,
+  });
+
+  deactivateUserCam = () => sendMessageToVideo({
+    type: "deactivateUserCam",
+    sessionToken: this.sessionToken,
+  });
+
   destroyVideo = () => sendMessageToVideo({ type: "destroyVideo", sessionToken: this.sessionToken });
 
   // Chat actions:
