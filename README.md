@@ -55,6 +55,10 @@ Or if you're working with NPM / ES6:
   - roomModeUpdate(string: roomMode)
   - VIPRequestStatusUpdate(string: status)
 
+### Common events
+  
+  - disconnected(string: reason)
+
 ## Methods
 
 ### Video
