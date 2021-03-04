@@ -10,7 +10,7 @@ Tool to achieve the easiest way of communication with the video/chat frames.
 
 ### 0. Pre-requisites
 
-You should have the two iframes already created on the DOM, with the the attributes `name="video-frame"` and `name="chat-frame"` respectively.
+You should have the two iframes already created on the DOM with the the attributes `name="video-frame"` and `name="chat-frame"` respectively. The `video-frame` needs the attribute `allow="camera;microphone"` in order to allow the user to activate his camera in private and his camera and microphone in VIP.
 
 ### 1. Include the library:
 
@@ -56,7 +56,7 @@ Or if you're working with NPM / ES6:
   - VIPRequestStatusUpdate(string: status)
 
 ### Common events
-  
+
   - disconnected(string: reason)
 
 ## Methods
