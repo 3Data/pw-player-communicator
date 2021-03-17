@@ -5,6 +5,11 @@ class Communicator extends EventEmitter {
 
   constructor({ sessionToken }){
     super();
+
+    if(typeof window === 'undefined'){
+      return;
+    };
+
     window.addEventListener("message", e => this.onMessageReceived(e));
     this.sessionToken = sessionToken;
     
