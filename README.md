@@ -21,15 +21,23 @@ You can do this inyecting directly to window:
 
 Or if you're working with NPM / ES6:
 
-    npm install --save pw-player-communicator
+    npm install --save @pw2016/pw-player-communicator
     ...
-    import PWPlayer from "pw-player-communicator";
+    import { Communicator } from "@pw2016/pw-player-communicator";
 
 
 ### 2. Instance the communicator with the sessionToken in options object:
 
+If you are inyecting into window:
+
     var communicator = new PWPlayer.Communicator({
       sessionToken: sessionToken
+    });
+
+Or if you're working with NPM / ES6:
+
+    const communicator = new Communicator({
+        sessionToken: "sessionToken"
     });
 
 ## Events
