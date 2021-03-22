@@ -13,13 +13,13 @@ class Communicator extends EventEmitter {
     window.addEventListener("message", e => this.onMessageReceived(e));
     this.sessionToken = sessionToken;
     
-    if(!document.querySelector("iframe[name=chat-frame")){
-      throw new Error("Chat frame not found. Check if the element exists.");
-    }
+    // if(!document.querySelector("iframe[name=chat-frame")){
+    //   throw new Error("Chat frame not found. Check if the element exists.");
+    // }
     
-    if(!document.querySelector("iframe[name=video-frame")){
-      throw new Error("Video frame not found. Check if the element exists.");
-    }
+    // if(!document.querySelector("iframe[name=video-frame")){
+    //   throw new Error("Video frame not found. Check if the element exists.");
+    // }
   }
 
   onMessageReceived = e => {
