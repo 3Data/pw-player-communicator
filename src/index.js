@@ -72,6 +72,12 @@ class Communicator extends EventEmitter {
 
   destroyVideo = () => sendMessageToVideo({ type: "destroyVideo", sessionToken: this.sessionToken });
 
+  stopVideo = () => sendMessageToVideo({ type: "stopVideo", sessionToken: this.sessionToken });
+
+  pauseVideo = () => sendMessageToVideo({ type: "pauseVideo", sessionToken: this.sessionToken });
+
+  playVideo = () => sendMessageToVideo({ type: "playVideo", sessionToken: this.sessionToken });
+
   // Chat actions:
 
   goToGroupChat = () => sendMessageToChat({type: "goToPrivate", sessionToken: this.sessionToken});
