@@ -76,9 +76,9 @@ Or if you're working with NPM / ES6:
   - destroyVideo()
   - activateUserCam()
   - deactivateUserCam()
-  - play()
-  - pause()
-  - stop()
+  - playVideo()
+  - pauseVideo()
+  - stopVideo()
 
 ### Chat
 
