@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: ghostwhite;
+  color: lightslategrey;
+  font-family: Hack, monospace;
+  padding: 20px;
+}
+
+#sessionToken{
+  display: none;
+}
+
+#iframes-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+iframe{
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+}
+
+iframe[name=chat-frame]{
+  padding: 10px;
+}
+
+#chat-messages{
+  margin: 0;
+  padding: 10px;
+  font-size: 13px;
+  list-style: none;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  color: gray;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+  word-break: break-all;
+}
+
+#chat-messages li{
+  margin-bottom: 1rem;
+}
+
+pre{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

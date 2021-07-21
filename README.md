@@ -87,3 +87,25 @@ Or if you're working with NPM / ES6:
   - sendToy(int: amount)
   - goToGroupChat()
   - requestVIP()
+
+- You have one example of the tester in the folder: examples/tester
+
+## Known issues
+
+### Autoplay Audio not started
+
+Some browser doesn't allow autoplay with sound.
+
+You can fix this with AudioContext and adding the permission autoplay in the iframe
+
+- You have one example in the folder: examples/detectnoaudio
+   
+
+### Not video because Low Power Mode in iPhone
+
+If you have the low power mode on in your iPhone, you can´t see the video because the phone is trying to keep the battery.
+
+You can fix this with checking if you got the "videoPlay" event in the communicator after few seconds.
+
+- You have one example in the folder: examples/lowpowermodeiphone
+
