@@ -2,9 +2,10 @@
 
 Tool to achieve the easiest way of communication with the video/chat frames.
 
- - [Installation](#Installation)
- - [Events](#Events)
- - [Methods](#Methods)
+ - [Installation](#installation)
+ - [Events](#events)
+ - [Methods](#methods)
+ - [Known Issues](#known-issues)
 
 ## Installation
 
@@ -90,15 +91,13 @@ Or if you're working with NPM / ES6:
 
 - You have one example of the tester in the folder: examples/tester
 
-## Known issues
+## Known issues
 
 ### Autoplay Audio not started
 
-Some browser doesn't allow autoplay with sound.
+Some browser doesn't allow autoplay with sound. You can fix this with AudioContext and adding the permission autoplay in the iframe
 
-You can fix this with AudioContext and adding the permission autoplay in the iframe
-
-- You have one example in the folder: examples/detectnoaudio
+You have one example in the folder: [examples/detectnoaudio](examples/detectnoaudio)
    
 
 ### Not video because Low Power Mode in iPhone
@@ -107,5 +106,5 @@ If you have the low power mode on in your iPhone, you can´t see the video becau
 
 You can fix this with checking if you got the "videoPlay" event in the communicator after few seconds.
 
-- You have one example in the folder: examples/lowpowermodeiphone
+You have one example in the folder: [examples/lowpowermodeiphone](examples/lowpowermodeiphone)
 
