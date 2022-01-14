@@ -77,8 +77,6 @@ Or if you're working with NPM / ES6:
 - activateUserCam()
 - deactivateUserCam()
 - playVideo()
-- pauseVideo()
-- stopVideo()
 
 ### Chat
 
