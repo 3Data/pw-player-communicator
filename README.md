@@ -2,16 +2,16 @@
 
 Tool to achieve the easiest way of communication with the video/chat frames.
 
- - [Installation](#installation)
- - [Events](#events)
- - [Methods](#methods)
- - [Known Issues](#known-issues)
+- [Installation](#installation)
+- [Events](#events)
+- [Methods](#methods)
+- [Known Issues](#known-issues)
 
 ## Installation
 
 ### 0. Pre-requisites
 
-You should have the two iframes already created on the DOM with the the attributes `name="video-frame"` and `name="chat-frame"` respectively. The `video-frame` needs the attribute `allow="camera;microphone"` in order to allow the user to activate his camera in private and his camera and microphone in VIP.
+You should have the two iframes already created on the DOM with the the attributes `name="video-frame"` and `name="chat-frame"` respectively. The `video-frame` needs the attribute `allow="camera;microphone;autoplay;fullscreen"` in order to allow the user to activate his camera in private and his camera and microphone in VIP.
 
 ### 1. Include the library:
 
@@ -25,7 +25,6 @@ Or if you're working with NPM / ES6:
     npm install --save @pw2016/pw-player-communicator
     ...
     import { Communicator } from "@pw2016/pw-player-communicator";
-
 
 ### 2. Instance the communicator with the sessionToken in options object:
 
@@ -53,41 +52,41 @@ Or if you're working with NPM / ES6:
 
 #### Video events
 
-  - videoPlay()
-  - videoStop()
-  - videoOffline()
-  - videoError()
+- videoPlay()
+- videoStop()
+- videoOffline()
+- videoError()
 
 #### Chat events
 
-  - chatMessage(object: { nick, message })
-  - roomModeUpdate(string: roomMode)
-  - VIPRequestStatusUpdate(string: status)
+- chatMessage(object: { nick, message })
+- roomModeUpdate(string: roomMode)
+- VIPRequestStatusUpdate(string: status)
 
 ### Common events
 
-  - disconnected(string: reason)
+- disconnected(string: reason)
 
 ## Methods
 
 ### Video
 
-  - setVolume(float 0 ... 1: volume)
-  - setMuted(boolean: muted)
-  - destroyVideo()
-  - activateUserCam()
-  - deactivateUserCam()
-  - playVideo()
-  - pauseVideo()
-  - stopVideo()
+- setVolume(float 0 ... 1: volume)
+- setMuted(boolean: muted)
+- destroyVideo()
+- activateUserCam()
+- deactivateUserCam()
+- playVideo()
+- pauseVideo()
+- stopVideo()
 
 ### Chat
 
-  - sendMessage(string: message)
-  - sendTip(int: amount)
-  - sendToy(int: amount)
-  - goToGroupChat()
-  - requestVIP()
+- sendMessage(string: message)
+- sendTip(int: amount)
+- sendToy(int: amount)
+- goToGroupChat()
+- requestVIP()
 
 - You have one example of the tester in the folder: examples/tester
 
@@ -98,7 +97,6 @@ Or if you're working with NPM / ES6:
 Some browser doesn't allow autoplay with sound. You can fix this with AudioContext and adding the permission autoplay in the iframe
 
 You have one example in the folder: [examples/detectnoaudio](examples/detectnoaudio)
-   
 
 ### Not video because Low Power Mode in iPhone
 
@@ -107,4 +105,3 @@ If you have the low power mode on in your iPhone, you can´t see the video becau
 You can fix this with checking if you got the "videoPlay" event in the communicator after few seconds.
 
 You have one example in the folder: [examples/lowpowermodeiphone](examples/lowpowermodeiphone)
-
