@@ -6,6 +6,7 @@ Tool to achieve the easiest way of communication with the video/chat frames.
 - [Events](#events)
 - [Methods](#methods)
 - [Known Issues](#known-issues)
+- [Integration examples](#integration-examples)
 
 ## Installation
 
@@ -25,6 +26,8 @@ Or if you're working with NPM / ES6:
     npm install --save @pw2016/pw-player-communicator
     ...
     import { Communicator } from "@pw2016/pw-player-communicator";
+
+Maybe you are interested in the [Integration examples](#integration-examples).
 
 ### 2. Instance the communicator with the sessionToken in options object:
 
@@ -103,3 +106,9 @@ If you have the low power mode on in your iPhone, you can´t see the video becau
 You can fix this with checking if you got the "videoPlay" event in the communicator after few seconds.
 
 You have one example in the folder: [examples/lowpowermodeiphone](examples/lowpowermodeiphone)
+
+## Integration examples
+
+Currently we have an example of integration using [Next.js](https://nextjs.org/) using the _appRouter_.
+
+Check out the [Next.js integration example](https://github.com/3Data/broker-nextjs).
