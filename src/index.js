@@ -35,6 +35,7 @@ class Communicator extends EventEmitter {
       case "onVIPRequestStatusUpdate": this.emit("VIPRequestStatusUpdate", e.data.status); break;
       // Common events:
       case "onDisconnected": this.emit("disconnected", e.data.reason); break;
+      case "onUserCamStatus": this.emit("userCamStatus", e.data.status); break;
     }
   }
 
