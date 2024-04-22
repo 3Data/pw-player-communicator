@@ -69,6 +69,7 @@ Or if you're working with NPM / ES6:
 ### Common events
 
 - disconnected(string: reason)
+- userCamStatus(string: status)
 
 ## Methods
 
