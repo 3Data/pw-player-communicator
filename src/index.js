@@ -89,19 +89,6 @@ class Communicator extends EventEmitter {
     value: message,
     sessionToken: this.sessionToken,
   });
-
-  sendTip = amount => sendMessageToChat({
-    type: "externalTip",
-    amount: amount,
-    sessionToken: this.sessionToken,
-  });
-
-  sendToy = amount => sendMessageToChat({
-    type: "externalToy",
-    amount: amount,
-    sessionToken: this.sessionToken,
-  });
-
 }
 
 export {

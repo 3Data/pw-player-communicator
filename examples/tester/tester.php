@@ -32,9 +32,6 @@ define('URL_API',"YOUR_API_URL");
     <button id="btGoGroupChat">Ir a Group Chat</button>
     <button id="btRequestVIP">Solicitar VIP</button>
     <hr />
-    <button id="btSendTip100">Send tip 100</button>
-    <button id="btSendToy50">Send toy 50</button>
-    <hr />
     <form id="chat-form">
       <input type="text" />
       <button type="submit">Enviar</button>
