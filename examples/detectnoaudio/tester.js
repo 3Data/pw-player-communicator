@@ -15,8 +15,6 @@ var btMute = document.querySelector("#btMute");
 var btUnmute = document.querySelector("#btUnmute");
 var btActivateCam = document.querySelector("#btActivateCam");
 var btDeactivateCam = document.querySelector("#btDeactivateCam");
-var btSendTip100 = document.querySelector("#btSendTip100");
-var btSendToy50 = document.querySelector("#btSendToy50");
 
 var formChat = document.querySelector("#chat-form");
 var input = formChat.querySelector("input");
@@ -112,14 +110,6 @@ btActivateCam.addEventListener("click", function(){
 
 btDeactivateCam.addEventListener("click", function(){
   communicator.deactivateUserCam();
-});
-
-btSendTip100.addEventListener("click", function(){
-  communicator.sendTip(100);
-});
-
-btSendToy50.addEventListener("click", function(){
-  communicator.sendToy(50);
 });
 
 formChat.addEventListener("submit", function(e){

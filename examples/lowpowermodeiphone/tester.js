@@ -18,8 +18,6 @@ var btMute = document.querySelector("#btMute");
 var btUnmute = document.querySelector("#btUnmute");
 var btActivateCam = document.querySelector("#btActivateCam");
 var btDeactivateCam = document.querySelector("#btDeactivateCam");
-var btSendTip100 = document.querySelector("#btSendTip100");
-var btSendToy50 = document.querySelector("#btSendToy50");
 var btPlayVideo = document.querySelector("#btPlayVideo");
 
 var formChat = document.querySelector("#chat-form");
@@ -28,7 +26,6 @@ var chatMessages = document.querySelector("#chat-messages");
 var roomModeIndicator = document.querySelector("#roomMode");
 var VIPRequestStatusIndicator = document.querySelector("#VIPRequestStatus");
 var videoStatus = document.querySelector("#videoStatus");
-
 
 // Video events:
 
@@ -112,14 +109,6 @@ btActivateCam.addEventListener("click", function(){
 
 btDeactivateCam.addEventListener("click", function(){
   communicator.deactivateUserCam();
-});
-
-btSendTip100.addEventListener("click", function(){
-  communicator.sendTip(100);
-});
-
-btSendToy50.addEventListener("click", function(){
-  communicator.sendToy(50);
 });
 
 btPlayVideo.addEventListener("click", function(){
