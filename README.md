@@ -115,6 +115,14 @@ Check out the [Next.js integration example](https://github.com/3Data/broker-next
 
 ## Changes on 2.0.0
 
+### New events
+
+New event to expose the user cam status:
+
+- userCamStatus(string: status)
+
+### Removed methods
+
 The next methods are no longer available. Sending tips or toys now should be done throug api request.
 
 - sendTip(int: amount)
