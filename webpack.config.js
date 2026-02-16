@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require("path");
 
 module.exports = {
   entry: path.resolve(__dirname, "src/index.js"),
@@ -7,6 +7,7 @@ module.exports = {
     filename: "pw-room-handler.js",
     library: "PWPlayer",
     libraryTarget: "umd",
+    globalObject: "this",
   },
   module: {
     rules: [
@@ -19,4 +20,4 @@ module.exports = {
   },
   mode: "production",
   watch: true,
-}
+};
