@@ -110,8 +110,13 @@ class Communicator extends EventEmitter {
 
   // Chat actions:
 
-  goToGroupChat = () =>
+  goToGroupChat = () => {
     sendMessageToChat({ type: "goToPrivate", sessionToken: this.sessionToken });
+    sendMessageToVideo({
+      type: "goToPrivate",
+      sessionToken: this.sessionToken,
+    });
+  };
 
   requestVIP = () =>
     sendMessageToChat({ type: "requestVIP", sessionToken: this.sessionToken });
