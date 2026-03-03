@@ -121,6 +121,12 @@ class Communicator extends EventEmitter {
   requestVIP = () =>
     sendMessageToChat({ type: "requestVIP", sessionToken: this.sessionToken });
 
+  requestOnDemand = () =>
+    sendMessageToChat({
+      type: "requestOnDemand",
+      sessionToken: this.sessionToken,
+    });
+
   sendMessage = (message) =>
     sendMessageToChat({
       type: "externalMessage",
