@@ -56,6 +56,9 @@ class Communicator extends EventEmitter {
       case "onUserCamStatus":
         this.emit("userCamStatus", e.data.status);
         break;
+      case "onOndemandStatusUpdate":
+        this.emit("onOndemandStatusUpdate", e.data.status);
+        break;
     }
   };
 
@@ -124,6 +127,12 @@ class Communicator extends EventEmitter {
   requestOnDemand = () =>
     sendMessageToChat({
       type: "requestOnDemand",
+      sessionToken: this.sessionToken,
+    });
+
+  cancelOnDemand = () =>
+    sendMessageToChat({
+      type: "cancelOnDemand",
       sessionToken: this.sessionToken,
     });
 
