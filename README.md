@@ -5,6 +5,7 @@ Tool to achieve the easiest way of communication with the video/chat frames.
 - [Installation](#installation)
 - [Events](#events)
 - [Methods](#methods)
+- [On Demand](#on-demand)
 - [Known Issues](#known-issues)
 - [Integration examples](#integration-examples)
 
@@ -93,9 +94,9 @@ Or if you're working with NPM / ES6:
 
 - You have one example of the tester in the folder: examples/tester
 
-### On Demand
+## On Demand
 
-Performers can active a feature that allows users to request their connection under user demand. 
+Performers can active a feature that allows users to request their connection under user demand.
 
 Performers with this feature enabled, have in their profile a flag `ondemand=1`.
 
