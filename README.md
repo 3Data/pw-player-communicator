@@ -102,7 +102,7 @@ Performers with this feature enabled, have in their profile a flag `ondemand=1`.
 
 If it is enabled, an end user can request the performer to start a room for them. These sessions will be VIP sessions (same price, same properties).
 
-Complete flow is available in Black label documentation, the main flow is: ![](ondemand.png)
+Complete flow is available in Black label documentation, the main flow is: ![](https://raw.githubusercontent.com/3Data/pw-player-communicator/c60238e503c61eb5c5b963572568a5cfbe983e2d/ondemand.png)
 
 This flow is automatically executed by the player.
 
