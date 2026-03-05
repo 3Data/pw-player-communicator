@@ -5,9 +5,9 @@ Tool to achieve the easiest way of communication with the video/chat frames.
 - [Installation](#installation)
 - [Events](#events)
 - [Methods](#methods)
+- [On Demand](#on-demand)
 - [Known Issues](#known-issues)
 - [Integration examples](#integration-examples)
-- [Changes on 2.0.0](#changes-on-2.0.0)
 
 ## Installation
 
@@ -66,6 +66,7 @@ Or if you're working with NPM / ES6:
 - chatMessage(object: { nick, message })
 - roomModeUpdate(string: roomMode)
 - VIPRequestStatusUpdate(string: status)
+- onOndemandStatusUpdate(string: status) - find detailed status list in lack label documentation
 
 ### Common events
 
@@ -88,8 +89,22 @@ Or if you're working with NPM / ES6:
 - sendMessage(string: message)
 - goToGroupChat()
 - requestVIP()
+- requestOnDemand()
+- cancelOnDemand()
 
 - You have one example of the tester in the folder: examples/tester
+
+## On Demand
+
+Performers can active a feature that allows users to request their connection under user demand.
+
+Performers with this feature enabled, have in their profile a flag `ondemand=1`.
+
+If it is enabled, an end user can request the performer to start a room for them. These sessions will be VIP sessions (same price, same properties).
+
+Complete flow is available in Black label documentation, the main flow is: ![](https://raw.githubusercontent.com/3Data/pw-player-communicator/c60238e503c61eb5c5b963572568a5cfbe983e2d/ondemand.png)
+
+This flow is automatically executed by the player.
 
 ## Known issues
 
@@ -112,18 +127,3 @@ You have one example in the folder: [examples/lowpowermodeiphone](examples/lowpo
 Currently we have an example of integration using [Next.js](https://nextjs.org/) using the _appRouter_.
 
 Check out the [Next.js integration example](https://github.com/3Data/broker-nextjs).
-
-## Changes on 2.0.0
-
-### New events
-
-New event to expose the user cam status:
-
-- userCamStatus(string: status)
-
-### Removed methods
-
-The next methods are no longer available. Sending tips or toys now should be done throug api request.
-
-- sendTip(int: amount)
-- sendToy(int: amount)
