@@ -8,6 +8,7 @@ Tool to achieve the easiest way of communication with the video/chat frames.
 - [Known Issues](#known-issues)
 - [Integration examples](#integration-examples)
 - [Changes on 2.0.0](#changes-on-2.0.0)
+- [Changes on 2.0.3](#changes-on-2.0.3)
 
 ## Installation
 
@@ -91,6 +92,26 @@ Or if you're working with NPM / ES6:
 
 - You have one example of the tester in the folder: examples/tester
 
+### On Demand
+
+Performers can active a feature that allows users to request their connection under user demand. 
+
+Performers with this feature enabled, have in their profile a flag `ondemand=1`.
+
+If it is enabled, an end user can request the performer to start a room for them. These sessions will be VIP sessions (same price, same properties).
+
+Complete flow is available in Black label documentation, the main flow is: ![](ondemand.png)
+
+This flow is automatically executed by the player using this methods:
+
+#### Methods
+
+- requestOnDemand()
+- cancelOnDemand()
+
+#### Events
+ - onOndemandStatusUpdate(string: status) - find detailed status list in lack label documentation
+
 ## Known issues
 
 ### Autoplay Audio not started
@@ -120,6 +141,19 @@ Check out the [Next.js integration example](https://github.com/3Data/broker-next
 New event to expose the user cam status:
 
 - userCamStatus(string: status)
+
+## Changes on 2.0.3
+
+### New event and methods for onDemand
+
+New methods:
+
+- requestOnDemand
+- cancelOnDemand
+
+New event to expose the onDemand request status:
+
+- onOndemandStatusUpdate(string: status)
 
 ### Removed methods
 
