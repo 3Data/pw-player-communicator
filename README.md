@@ -7,8 +7,6 @@ Tool to achieve the easiest way of communication with the video/chat frames.
 - [Methods](#methods)
 - [Known Issues](#known-issues)
 - [Integration examples](#integration-examples)
-- [Changes on 2.0.0](#changes-on-2.0.0)
-- [Changes on 2.0.3](#changes-on-2.0.3)
 
 ## Installation
 
@@ -133,31 +131,3 @@ You have one example in the folder: [examples/lowpowermodeiphone](examples/lowpo
 Currently we have an example of integration using [Next.js](https://nextjs.org/) using the _appRouter_.
 
 Check out the [Next.js integration example](https://github.com/3Data/broker-nextjs).
-
-## Changes on 2.0.0
-
-### New events
-
-New event to expose the user cam status:
-
-- userCamStatus(string: status)
-
-## Changes on 2.0.3
-
-### New event and methods for onDemand
-
-New methods:
-
-- requestOnDemand
-- cancelOnDemand
-
-New event to expose the onDemand request status:
-
-- onOndemandStatusUpdate(string: status)
-
-### Removed methods
-
-The next methods are no longer available. Sending tips or toys now should be done throug api request.
-
-- sendTip(int: amount)
-- sendToy(int: amount)
