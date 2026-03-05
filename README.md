@@ -65,6 +65,7 @@ Or if you're working with NPM / ES6:
 - chatMessage(object: { nick, message })
 - roomModeUpdate(string: roomMode)
 - VIPRequestStatusUpdate(string: status)
+- onOndemandStatusUpdate(string: status) - find detailed status list in lack label documentation
 
 ### Common events
 
@@ -87,6 +88,8 @@ Or if you're working with NPM / ES6:
 - sendMessage(string: message)
 - goToGroupChat()
 - requestVIP()
+- requestOnDemand()
+- cancelOnDemand()
 
 - You have one example of the tester in the folder: examples/tester
 
@@ -100,15 +103,7 @@ If it is enabled, an end user can request the performer to start a room for them
 
 Complete flow is available in Black label documentation, the main flow is: ![](ondemand.png)
 
-This flow is automatically executed by the player using this methods:
-
-#### Methods
-
-- requestOnDemand()
-- cancelOnDemand()
-
-#### Events
- - onOndemandStatusUpdate(string: status) - find detailed status list in lack label documentation
+This flow is automatically executed by the player.
 
 ## Known issues
 
